@@ -18,7 +18,7 @@
 
 ## Requirements
 
-* Python 3.10+
+* [Python 3.10+](https://www.python.org/downloads/release/python-3102/)
 * [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/) – Python Telegram Bot API
 * [requests](https://pypi.org/project/requests/) - библиотека requests
 * [peewee](https://pypi.org/project/peewee/) - база данных поисковых параметров каждого пользователя
@@ -44,7 +44,6 @@
 
 ### Вывод результата
 
-Примеры сигнала:
 ![](img.png "Сигнал✅")
 ![](img_2.png "Сигнал❌")
 ![](img_3.png "Сигнал⍻(Не найдены результаты)")
