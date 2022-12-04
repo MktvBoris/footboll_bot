@@ -1,0 +1,9 @@
+python-dotenv==0.21.0
+pyTelegramBotAPI==4.7.0
+selenium==4.4.3
+loguru==0.6.0
+peewee==3.15.3
+beautifulsoup4==4.11.1
+lxml==4.9.1
+requests==2.28.1
+webdavclient3==3.14.6
