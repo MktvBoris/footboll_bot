@@ -30,8 +30,8 @@
 Вы можете установить все зависимости, выполнив следующую команду: `pip install -r requirements.txt`
 
 Также для работы требуется программы (имеются в репозитории)
-*[Google Chrome ver. 106.0.5249.103](https://www.google.com/intl/ru/chrome/)
-*[ChromeDriver 106.0.5249.61](https://chromedriver.storage.googleapis.com/index.html?path=106.0.5249.61/)
+* [Google Chrome ver. 106.0.5249.103](https://www.google.com/intl/ru/chrome/)
+* [ChromeDriver 106.0.5249.61](https://chromedriver.storage.googleapis.com/index.html?path=106.0.5249.61/)
 
 ## Логирование
 
@@ -45,10 +45,7 @@
 ### Вывод результата
 
 Примеры сигнала:
-*Сигнал✅
 ![](img.png "Сигнал✅")
-* Сигнал❌
 ![](img_2.png "Сигнал❌")
-*Сигнал⍻(Не найдены результаты)
-![](img_3.png "Сигнал⍻")
+![](img_3.png "Сигнал⍻(Не найдены результаты)")
 
