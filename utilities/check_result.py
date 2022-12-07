@@ -35,10 +35,10 @@ def sleep_check_result() -> None:
             scoreboard_info_all = [text.strip() for text in scoreboard_info[0].text.split('\n') if text.strip() != '']
         else:
             continue
-        if 'Матч состоялся' in scoreboard_info_all:
+        if 'Матч состоялся' in scoreboard_info_all or 'Match finished' in scoreboard_info_all:
             score = scoreboard_info_all[2]
 
-        elif 'После серии пенальти' in scoreboard_info_all:
+        elif 'После серии пенальти' in scoreboard_info_all or 'After penalty shootout' in scoreboard_info_all:
             score = scoreboard_info_all[2][1:-1]
         else:
             continue
@@ -61,13 +61,13 @@ def sleep_check_result() -> None:
                     trigger = False
                     start = 1
                     for row in reversed(match_chronicles):
-                        if start == 1 and row.text.strip() != '1 Тайм':
+                        if start == 1 and row.text.strip() not in ('1 Тайм', '1 Half'):
                             break
                         start += 1
 
-                        if row.text.strip() == '2 Тайм':
+                        if row.text.strip() in ('2 Тайм', '2 Half'):
                             trigger = True
-                        elif row.text.strip() == 'ОТ':
+                        elif row.text.strip() in ('ОТ', 'Overtime'):
                             break
                         if not trigger:
                             continue
